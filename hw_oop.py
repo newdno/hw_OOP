@@ -14,7 +14,6 @@ class Student:
                 lecturer.grades[course] = [grade]
         else:
             return 'Ошибка'
-
         
 class Mentor:
     def __init__(self, name, surname):
@@ -45,16 +44,16 @@ best_student = Student('Ruoy', 'Eman', 'your_gender')
 best_student.courses_in_progress += ['Python']
 best_student.courses_in_progress += ['Git']
  
-cool_reviewer = Reviewer('Some', 'Buddy')
-cool_reviewer.courses_attached += ['Python']
+some_reviewer = Reviewer('Some', 'Buddy')
+some_reviewer.courses_attached += ['Python']
 
 some_lecturer = Lecturer('John', 'Dou')
 some_lecturer.courses_attached += ['Python']
 some_lecturer.courses_attached += ['Git']
  
-cool_reviewer.rate_hw(best_student, 'Python', 10)
-cool_reviewer.rate_hw(best_student, 'Python', 10)
-cool_reviewer.rate_hw(best_student, 'Python', 10)
+some_reviewer.rate_hw(best_student, 'Python', 10)
+some_reviewer.rate_hw(best_student, 'Python', 10)
+some_reviewer.rate_hw(best_student, 'Python', 10)
 
 best_student.rate_lecturer(some_lecturer, 'Git', 10)
 best_student.rate_lecturer(some_lecturer, 'Python', 8)
